@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    stream:
+# Function way:
+      function:
+        bindings:
+          person-out-0: person-out-stream
+# Binding annotations way:
+#      bindings:
+#        output:
+#          destination: person-out-stream
+
+server:
+  port: 8081
+

@@ -1,0 +1,3 @@
+include 'cloud-stream-app'
+include 'cloud-stream-process-app'
+include 'cloud-stream-consumer-app'

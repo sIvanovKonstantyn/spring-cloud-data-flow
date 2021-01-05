@@ -1,0 +1,17 @@
+server:
+  port: 8082
+
+spring:
+  cloud:
+    stream:
+# Function way:
+      function:
+        bindings:
+          person-in-0: person-out-stream
+          person-out-0: person-upper-out-stream
+# Binding annotations way
+#      bindings:
+#        input:
+#          destination: person-out-stream
+#        output:
+#          destination: person-upper-out-stream

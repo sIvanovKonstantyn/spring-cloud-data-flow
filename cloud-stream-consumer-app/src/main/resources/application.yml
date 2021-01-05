@@ -1,0 +1,13 @@
+server:
+  port: 8083
+
+spring:
+  cloud:
+    stream:
+# Function way:
+      function:
+        bindings:
+          person-in-0: person-upper-out-stream
+#      bindings:
+#        input:
+#          destination: person-upper-out-stream
